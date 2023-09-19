@@ -1,0 +1,106 @@
+"""Generates PCIO-compatible cards.csv from cards.json."""
+
+
+from csv import DictWriter
+from json import load
+from os.path import isfile
+from typing import Any, NotRequired, TypedDict
+
+
+class CardJSON(TypedDict):
+    """A card's JSON specifications"""
+
+    count: int
+    type: str
+    range: NotRequired[str]
+    abilities: list[dict[str, str]]
+    info: NotRequired[str]
+
+
+def asset_path(base: str, path: str) -> str:
+    """Gets absolute asset path from relative-to-root base path and a relative-to-base path"""
+
+    rel_path = f'{base}/{path}.png'
+    if not isfile(rel_path):
+        raise ValueError(f'bad path: {rel_path}')
+    return f'https://github.com/One-Nose/Myths/blob/main/{rel_path}?raw=true'
+
+
+def card_dict(name: str, card: CardJSON) -> dict[str, str]:
+    """Gets the fields of a card."""
+
+    fields = {
+        'label': name,
+        'card_type': card['type'],
+        'range': asset_path(
+            'assets/hexes/range',
+            card['range'] if 'range' in card else 'indirectional/none',
+        ),
+    }
+
+    fields.update(get_abilities(card['abilities']))
+
+    fields.update(
+        {
+            'info': ' - ' + card['info'] if 'info' in card else '',
+            'item-count': str(card['count']),
+        }
+    )
+
+    return fields
+
+
+def get_abilities(abilities: list[dict[str, str]]) -> dict[str, str]:
+    """Gets the ability fields of a card from its abilities specifications"""
+
+    fields: dict[str, str] = {}
+
+    for i in range(3):
+        if i < len(abilities):
+            fields[f'image{i+1}'] = asset_path('assets/circle', abilities[i]['circle'])
+            fields[f'text{i+1}'] = (
+                abilities[i]['text'] if 'text' in abilities[i] else ''
+            )
+        else:
+            fields[f'image{i+1}'] = fields[f'text{i+1}'] = ''
+
+    return fields
+
+
+def get_cards() -> list[dict[str, str]]:
+    """Gets the fields of the cards from cards.json."""
+
+    cards = get_json()
+    return [card_dict(name, card) for name, card in cards.items()]
+
+
+def get_json() -> dict[str, CardJSON]:
+    """Gets the cards.json dictionary"""
+
+    with open('cards.json', encoding='UTF-8') as file:
+        cards: dict[str, Any] = load(file)
+
+    del cards['$schema']
+    return cards
+
+
+def main() -> None:
+    """Generates cards.csv from cards.json."""
+
+    cards = get_cards()
+    write_cards(cards)
+
+
+def write_cards(cards: list[dict[str, str]]) -> None:
+    """Writes a list of card fields to cards.csv"""
+
+    fieldnames = cards[0].keys()
+    with open('cards.csv', 'w', encoding='UTF-8', newline='') as file:
+        writer = DictWriter(file, fieldnames=fieldnames)
+
+        writer.writeheader()
+        writer.writerows(cards)
+
+
+if __name__ == '__main__':
+    main()

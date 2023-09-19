@@ -1,0 +1,64 @@
+{
+    "$id": "cards.schema.json",
+    "type": "object",
+    "description": "A map of card names to their specifications.",
+    "properties": {
+        "$schema": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": {
+        "type": "object",
+        "description": "Specifications of a card.",
+        "properties": {
+            "count": {
+                "type": "integer",
+                "description": "The amount of copies of the card in the library.",
+                "minimum": 0,
+                "default": 2
+            },
+            "type": {
+                "type": "string",
+                "description": "The card's type, usually \"ACTION\" or \"STANCE\".",
+                "examples": ["ACTION", "STANCE"]
+            },
+            "range": {
+                "$ref": "#/$defs/path",
+                "description": "The card's range image, relative to 'assets/hexes/range' (optional)."
+            },
+            "abilities": {
+                "type": "array",
+                "description": "A list of up to three abilities.",
+                "maxItems": 3,
+                "items": {
+                    "type": "object",
+                    "description": "An ability to display on the card.",
+                    "properties": {
+                        "circle": {
+                            "$ref": "#/$defs/path",
+                            "description": "The ability's circle image, relative to 'assets/circle'."
+                        },
+                        "text": {
+                            "type": "string",
+                            "description": "Text to be displayed next to the circle (optional)."
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": ["circle"]
+                }
+            },
+            "info": {
+                "type": "string",
+                "description": "Additional text to be displayed at the bottom of the card (optional)."
+            }
+        },
+        "additionalProperties": false,
+        "required": ["count", "type", "abilities"]
+    },
+    "$defs": {
+        "path": {
+            "type": "string",
+            "pattern": "^[a-z_]+(/[a-z_]+)*$"
+        }
+    }
+}
