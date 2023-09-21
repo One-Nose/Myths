@@ -26,17 +26,17 @@
                 "$ref": "#/$defs/path",
                 "description": "The card's range image, relative to 'assets/hexes/range' (optional)."
             },
-            "abilities": {
+            "effects": {
                 "type": "array",
-                "description": "A list of up to three abilities.",
+                "description": "A list of up to three effects.",
                 "maxItems": 3,
                 "items": {
                     "type": "object",
-                    "description": "An ability to display on the card.",
+                    "description": "An effect to display on the card.",
                     "properties": {
-                        "circle": {
+                        "type": {
                             "$ref": "#/$defs/path",
-                            "description": "The ability's circle image, relative to 'assets/circle'."
+                            "description": "The effect's circle image, relative to 'assets/effect'."
                         },
                         "text": {
                             "type": "string",
@@ -44,7 +44,7 @@
                         }
                     },
                     "additionalProperties": false,
-                    "required": ["circle"]
+                    "required": ["type"]
                 }
             },
             "info": {
@@ -53,7 +53,7 @@
             }
         },
         "additionalProperties": false,
-        "required": ["count", "type", "abilities"]
+        "required": ["count", "type", "effects"]
     },
     "$defs": {
         "path": {

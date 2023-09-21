@@ -13,7 +13,7 @@ class CardJSON(TypedDict):
     count: int
     type: str
     range: NotRequired[str]
-    abilities: list[dict[str, str]]
+    effects: list[dict[str, str]]
     info: NotRequired[str]
 
 
@@ -34,11 +34,11 @@ def card_dict(name: str, card: CardJSON) -> dict[str, str]:
         'card_type': card['type'],
         'range': asset_path(
             'assets/hexes/range',
-            card['range'] if 'range' in card else 'indirectional/none',
+            card['range'] if 'range' in card else 'untargeted/none',
         ),
     }
 
-    fields.update(get_abilities(card['abilities']))
+    fields.update(get_effects(card['effects']))
 
     fields.update(
         {
@@ -50,17 +50,15 @@ def card_dict(name: str, card: CardJSON) -> dict[str, str]:
     return fields
 
 
-def get_abilities(abilities: list[dict[str, str]]) -> dict[str, str]:
-    """Gets the ability fields of a card from its abilities specifications"""
+def get_effects(effects: list[dict[str, str]]) -> dict[str, str]:
+    """Gets the effect fields of a card from its effects specifications"""
 
     fields: dict[str, str] = {}
 
     for i in range(3):
-        if i < len(abilities):
-            fields[f'image{i+1}'] = asset_path('assets/circle', abilities[i]['circle'])
-            fields[f'text{i+1}'] = (
-                abilities[i]['text'] if 'text' in abilities[i] else ''
-            )
+        if i < len(effects):
+            fields[f'image{i+1}'] = asset_path('assets/effect', effects[i]['type'])
+            fields[f'text{i+1}'] = effects[i]['text'] if 'text' in effects[i] else ''
         else:
             fields[f'image{i+1}'] = fields[f'text{i+1}'] = ''
 

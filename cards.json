@@ -4,66 +4,62 @@
         "count": 2,
         "type": "ACTION",
         "range": "directional/inaccurate",
-        "abilities": [
+        "effects": [
             {
-                "circle": "white/action/persist",
-                "text": "Walk 1"
+                "type": "starting/instant/continue",
+                "text": "Walk 2 towards your direction //."
             },
             {
-                "circle": "green/empty/continue",
-                "text": "Take a Walk +1 in the direction of your focus //."
-            },
-            {
-                "circle": "blue/action/discard",
+                "type": "temporary/move/discard",
                 "text": "Deal 4 damage to all targets."
             }
         ],
-        "info": "Directional focus"
+        "info": "Directional focus."
     },
     "Deadly": {
         "count": 2,
         "type": "STANCE",
-        "abilities": [
+        "effects": [
             {
-                "circle": "white/action/persist",
-                "text": "Shift focus."
+                "type": "regular/move",
+                "text": "Refocus."
             },
             {
-                "circle": "white/passive/long",
-                "text": "Every time you deal damage with a \"Directional focus\" action, increase the amount of damage by 1."
+                "type": "regular/passive/short",
+                "text": "Damage dealt by your directional focus cards is increased by 1."
             }
         ]
     },
     "Defense Position": {
         "count": 2,
         "type": "STANCE",
-        "abilities": [
+        "effects": [
             {
-                "circle": "white/action/persist",
-                "text": "Shift focus."
+                "type": "regular/move",
+                "text": "Refocus."
             },
             {
-                "circle": "white/passive/persist",
-                "text": "Damage recieved is decreased by 1."
+                "type": "regular/passive/short",
+                "text": "Damage dealt to you is decreased by 1."
             }
         ]
     },
     "Displacement": {
         "count": 2,
         "type": "ACTION",
-        "range": "directional/inaccurate",
-        "abilities": [
+        "range": "directional/displacement",
+        "effects": [
             {
-                "circle": "white/passive/long",
-                "text": "You and the grappled target are slowed down by 1. You are locked on each other."
+                "type": "regular/passive/long",
+                "text": "You and the marked target are slowed down by 1. It is locked on you."
             },
             {
-                "circle": "green/empty/continue",
-                "text": "Choose a target. It becomes grappled //."
+                "type": "starting/instant/continue",
+                "text": "Mark a target //."
             },
             {
-                "circle": "blue/action/discard",
-                "text": "The target is moved to the the tile on the opposite side of you. "
+                "type": "temporary/move/discard",
+                "text": "The marked target is moved to the the marked hex."
             }
         ],
         "info": "Directional focus."
@@ -72,14 +68,14 @@
         "count": 2,
         "type": "ACTION",
         "range": "directional/inaccurate",
-        "abilities": [
+        "effects": [
             {
-                "circle": "green/empty/continue",
+                "type": "starting/instant/continue",
                 "text": "Deal 2 damage to all targets //."
             },
             {
-                "circle": "blue/action/discard",
-                "text": "You may shift focus to a target hex. Deal 4 damage to all targets."
+                "type": "temporary/move/discard",
+                "text": "You may refocus to a target hex. Deal 4 damage to all targets."
             }
         ],
         "info": "Directional focus."
@@ -88,33 +84,33 @@
         "count": 2,
         "type": "ACTION",
         "range": "directional/accurate",
-        "abilities": [
+        "effects": [
             {
-                "circle": "green/lone/continue"
+                "type": "starting/empty/continue"
             },
             {
-                "circle": "blue/action/discard",
-                "text": "Deal 4 damage to a target //. The target loses its focus."
+                "type": "temporary/move/discard",
+                "text": "Deal 4 damage to a target //. It unfocuses."
             }
         ],
-        "info": "Targeted directional focus."
+        "info": "Directional focus."
     },
     "Grapple": {
         "count": 2,
         "type": "ACTION",
         "range": "directional/inaccurate",
-        "abilities": [
+        "effects": [
             {
-                "circle": "green/empty/continue",
-                "text": "Choose a target. It becomes grappled //."
+                "type": "starting/instant/continue",
+                "text": "Mark a target //."
             },
             {
-                "circle": "blue/action/persist",
-                "text": "Discard the grappled target's action."
+                "type": "temporary/move/stay",
+                "text": "Discard the marked target's action."
             },
             {
-                "circle": "white/passive/long",
-                "text": "You and the grappled target are slowed down by 1. You are locked on each other."
+                "type": "regular/passive/long",
+                "text": "You and the marked target are slowed down by 1. It is locked on you."
             }
         ],
         "info": "Directional focus."
@@ -122,64 +118,64 @@
     "Light-Footed": {
         "count": 2,
         "type": "STANCE",
-        "abilities": [
+        "effects": [
             {
-                "circle": "white/action/persist",
-                "text": "Shift focus."
+                "type": "regular/move",
+                "text": "Refocus."
             },
             {
-                "circle": "white/passive/persist",
-                "text": "You may increase your walk actions by 1."
+                "type": "regular/passive/short",
+                "text": "You may increase your walk abilities by 1."
             }
         ]
     },
     "Lightning Reflexes": {
         "count": 2,
         "type": "STANCE",
-        "range": "indirectional/adjacent",
-        "abilities": [
+        "range": "untargeted/adjacent",
+        "effects": [
             {
-                "circle": "white/action/persist",
-                "text": "Shift focus."
+                "type": "regular/move",
+                "text": "Refocus."
             },
             {
-                "circle": "white/passive/persist",
-                "text": "When a target leaves the range, you may deal 2 damage to it."
+                "type": "regular/passive/short",
+                "text": "When a character leaves a marked hex, you may deal 2 damage to it."
             }
         ]
     },
     "Quick Steps": {
         "count": 2,
         "type": "STANCE",
-        "abilities": [
+        "effects": [
             {
-                "circle": "white/action/persist",
-                "text": "Shift focus."
+                "type": "regular/move",
+                "text": "Refocus."
             },
             {
-                "circle": "white/swift/persist",
+                "type": "regular/swift",
                 "text": "Walk 1."
             }
         ]
     },
     "Tripping Strike": {
         "count": 2,
-        "type": "ACTION (S)",
+        "type": "ACTION",
         "range": "directional/inaccurate",
-        "abilities": [
+        "effects": [
             {
-                "circle": "green/empty/continue",
-                "text": "Deal 1 damage to a target //. It unfocuses and becomes prone. "
+                "type": "starting/instant/continue",
+                "text": "Deal 1 damage to a target //. It unfocuses and becomes prone."
             },
             {
-                "circle": "blue/action/persist",
+                "type": "temporary/move/stay",
                 "text": "Deal 4 damage to a prone target."
             },
             {
-                "circle": "white/passive/persist",
-                "text": "You may deal 2 damage to a target that uses a \"stand up\" action."
+                "type": "regular/passive/short",
+                "text": "You may deal 2 damage to any target that uses a stand up move."
             }
         ],
-        "info": "Directional focus. stand up: a creature can use a walk -1 action to stop being prone."
+        "info": "Directional focus. Prone characters can spend a move to walk 0 and stop being prone."
     }
 }
