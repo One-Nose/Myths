@@ -29,7 +29,7 @@ To pass the _turn_, press the **End Turn** button. To move the game pieces, drag
 5. Each _character_ _draws_ 5 _cards_.
 6. The first _player_ begins their _player turn_.
 
-## The turn
+## The game
 
 Each _player turn_, each _character_ that _player_ controls gets one _turn_. The _player_ may choose the order of the _turns_, then it becomes the next _player_'s _player turn_.
 
