@@ -110,7 +110,7 @@
             },
             {
                 "type": "regular/passive/long",
-                "text": "You and the marked target are slowed down by 1. It is locked on you."
+                "text": "You and the marked target are slowed down and weakened by 1. It is locked on you."
             }
         ],
         "info": "Directional focus."

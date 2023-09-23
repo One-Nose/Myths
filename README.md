@@ -139,7 +139,7 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Player turn:** A period in which each _character_ of a _player_ gets a _turn_.
 
-**Prone:** A _prone_ _character_ is a _character_ that is lying on the ground. A _prone_ _character_'s _walk_ _abilities_ are decreased to 1, and they _deals 1 damage_ less. A _prone_ _character_ can stop this _state_ by using a _stands up_.
+**Prone:** A _prone_ _character_ is a _character_ that is lying on the ground. A _prone_ _character_'s _walk_ _abilities_ are decreased to 1, and they are _weakened_ by 1. A _prone_ _character_ can stop this _state_ by using a _stands up_.
 
 **Range:** A diagram that appears on _cards_ and defines their _targets_ and _marked hexes_. To be viewed correctly, every _hex_ on the _range_ must be parallel to a _hex_ on the _board_ that fulfills the _hex type_'s conditions. If at any point the _range_ cannot be viewed correctly, the _card_ is _discarded_ immediately.
 
@@ -182,3 +182,5 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 **Unfocused:** A _state_ a _character_ is in if its _focus mark_ is outside the _board_.
 
 **Walk:** An _ability_ that causes the _character_ to repeat a certain amount of times the process of moving its _pion_ to an adjacent _hex_, then if the _character_ is on the same _hex_ as its _focus mark_, move the _focus mark_ one step in the same direction.
+
+**Weakened:** A _state_ in which _damage dealt_ by the _character_ is reduced by a certain number.
