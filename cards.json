@@ -173,9 +173,9 @@
             },
             {
                 "type": "regular/passive/short",
-                "text": "You may deal 2 damage to any target that uses a stand up move."
+                "text": "You may deal 2 damage to any target that stands up."
             }
         ],
-        "info": "Directional focus. Prone characters can spend a move to walk 0 and stop being prone."
+        "info": "Directional focus. Prone characters can spend a walk 1 to stop being prone."
     }
 }

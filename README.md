@@ -139,7 +139,7 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Player turn:** A period in which each _character_ of a _player_ gets a _turn_.
 
-**Prone:** A _state_ in which a _character_ remains until it uses a _stand up move_.
+**Prone:** A _state_ in which a _character_ remains until it _stands up_.
 
 **Range:** A diagram that appears on _cards_ and defines their _targets_ and _marked hexes_. To be viewed correctly, every _hex_ on the _range_ must be parallel to a _hex_ on the _board_ that fulfills the _hex type_'s conditions. If at any point the _range_ cannot be viewed correctly, the _card_ is _discarded_ immediately.
 
@@ -151,11 +151,13 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Slowed down:** A _state_ in which a _character_'s _walk_ _abilities_ are decreased by a certain number.
 
+**Spend:** A process in which a _character_ chooses to give up an _ability_ or decrease from its number to get another effect. A _character_ cannot spend a number that would decrease the _ability_'s number to lower than 0.
+
 **Stance:** A _card type_ that is either an _Alert card_ or placed over it, and cannot contain _temporary effects_. A _character_'s _stance_ is its _Alert card_ if it is exposed or the _stance_ that covers it.
 
 **Stand Card:** A _base card_ that is an _action_. Contains only a _regular_ _move effect_ that says "_Walk_ 1."
 
-**Stand up move:** A _move_ any _prone_ _character_ may use at any time to _walk_ 0 and stop being _prone_.
+**Stand up:** A choice any _prone_ _character_ may make at any time to _spend_ a _walk_ 1 _ability_ to stop being _prone_.
 
 **Starting effect:** A type of _temporary effect_ that causes the _character_ to place its _action mark_ on it immediately when the _action_ is _played_.
 
