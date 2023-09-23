@@ -139,7 +139,7 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Player turn:** A period in which each _character_ of a _player_ gets a _turn_.
 
-**Prone:** A _state_ in which a _character_ remains until it _stands up_.
+**Prone:** A _prone_ _character_ is a _character_ that is lying on the ground. A _prone_ _character_'s _walk_ _abilities_ are decreased to 1, and they _deals 1 damage_ less. A _prone_ _character_ can stop this _state_ by using a _stands up_.
 
 **Range:** A diagram that appears on _cards_ and defines their _targets_ and _marked hexes_. To be viewed correctly, every _hex_ on the _range_ must be parallel to a _hex_ on the _board_ that fulfills the _hex type_'s conditions. If at any point the _range_ cannot be viewed correctly, the _card_ is _discarded_ immediately.
 
