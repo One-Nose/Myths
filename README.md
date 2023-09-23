@@ -6,7 +6,7 @@ This is an experimental board game that is currently only available as a two-pla
 
 To play the game online, import `myths.pcio` to https://playingcards.io. Share the room's URL with a friend. Each _player_ chooses a seat, then press the **Reset Game** button to automatically start the game, and skip to [The Game](#the-game).
 
-To pass the _turn_, press the **End Turn** button. To move the game pieces, drag them. To _discard_, place _cards_ in the appropriate **Trash** and press the **Empty Trash** button. To _reshuffle_, move the _library_ to the appropriate **Trash** by holding the number next to it and dragging, then press **Shuffle**. To place the _action mark_ on an _effect_, drag the black arrow into the white space next to the _action_ so that it points at the _effect_.
+To pass the _turn_, press the **End Turn** button. To move the game pieces, drag them. To _discard_, place _cards_ in the appropriate **Trash** and press the **Empty Trash** button. To _reshuffle_, move the _library_ to the appropriate **Trash** by holding the number next to it and dragging, then press **Shuffle**. To place the _action mark_ on an _effect_, drag the black arrow into the white space next to the _action_ so that it points at the _effect_. To mark a _character_ as _prone_, use the **Prone** marks.
 
 ## Content
 
