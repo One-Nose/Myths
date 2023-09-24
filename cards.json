@@ -1,181 +1,174 @@
 {
     "$schema": "cards.schema.json",
-    "Charge!": {
-        "count": 2,
-        "type": "ACTION",
-        "range": "directional/inaccurate",
-        "effects": [
-            {
-                "type": "starting/instant/continue",
-                "text": "Walk 2 towards your direction //."
-            },
-            {
-                "type": "temporary/move/discard",
-                "text": "Deal 4 damage to all targets."
-            }
-        ],
-        "info": "Directional focus."
+    "actions": {
+        "Charge!": {
+            "count": 2,
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "starting/instant/continue",
+                    "text": "Walk 2 towards your direction //."
+                },
+                {
+                    "type": "temporary/move/discard",
+                    "text": "Deal 4 damage to all targets."
+                }
+            ],
+            "info": "Directional focus."
+        },
+        "Displacement": {
+            "count": 2,
+            "range": "directional/displacement",
+            "effects": [
+                {
+                    "type": "regular/passive/long",
+                    "text": "You and the marked target are slowed down by 1. It is locked on you."
+                },
+                {
+                    "type": "starting/instant/continue",
+                    "text": "Mark a target //."
+                },
+                {
+                    "type": "temporary/move/discard",
+                    "text": "The marked target is moved to the the marked hex."
+                }
+            ],
+            "info": "Directional focus."
+        },
+        "Double Swing": {
+            "count": 2,
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "starting/instant/continue",
+                    "text": "Deal 2 damage to all targets //."
+                },
+                {
+                    "type": "temporary/move/discard",
+                    "text": "You may refocus to a target hex. Deal 4 damage to all targets."
+                }
+            ],
+            "info": "Directional focus."
+        },
+        "Fatal Blow": {
+            "count": 2,
+            "range": "directional/accurate",
+            "effects": [
+                {
+                    "type": "starting/empty/continue"
+                },
+                {
+                    "type": "temporary/move/discard",
+                    "text": "Deal 4 damage to a target //. It unfocuses."
+                }
+            ],
+            "info": "Directional focus."
+        },
+        "Grapple": {
+            "count": 2,
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "starting/instant/continue",
+                    "text": "Mark a target //."
+                },
+                {
+                    "type": "temporary/move/stay",
+                    "text": "Discard the marked target's action."
+                },
+                {
+                    "type": "regular/passive/long",
+                    "text": "You and the marked target are slowed down and weakened by 1. It is locked on you."
+                }
+            ],
+            "info": "Directional focus."
+        },
+        "Tripping Strike": {
+            "count": 2,
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "starting/instant/continue",
+                    "text": "Deal 1 damage to a target //. It unfocuses and becomes prone."
+                },
+                {
+                    "type": "temporary/move/stay",
+                    "text": "Deal 4 damage to a prone target."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "You may deal 2 damage to any target that stands up."
+                }
+            ],
+            "info": "Directional focus. Prone characters can spend a walk 1 to stop being prone."
+        }
     },
-    "Deadly": {
-        "count": 2,
-        "type": "STANCE",
-        "effects": [
-            {
-                "type": "regular/move",
-                "text": "Refocus."
-            },
-            {
-                "type": "regular/passive/short",
-                "text": "Damage dealt by your directional focus cards is increased by 1."
-            }
-        ]
-    },
-    "Defense Position": {
-        "count": 2,
-        "type": "STANCE",
-        "effects": [
-            {
-                "type": "regular/move",
-                "text": "Refocus."
-            },
-            {
-                "type": "regular/passive/short",
-                "text": "Damage dealt to you is decreased by 1."
-            }
-        ]
-    },
-    "Displacement": {
-        "count": 2,
-        "type": "ACTION",
-        "range": "directional/displacement",
-        "effects": [
-            {
-                "type": "regular/passive/long",
-                "text": "You and the marked target are slowed down by 1. It is locked on you."
-            },
-            {
-                "type": "starting/instant/continue",
-                "text": "Mark a target //."
-            },
-            {
-                "type": "temporary/move/discard",
-                "text": "The marked target is moved to the the marked hex."
-            }
-        ],
-        "info": "Directional focus."
-    },
-    "Double Swing": {
-        "count": 2,
-        "type": "ACTION",
-        "range": "directional/inaccurate",
-        "effects": [
-            {
-                "type": "starting/instant/continue",
-                "text": "Deal 2 damage to all targets //."
-            },
-            {
-                "type": "temporary/move/discard",
-                "text": "You may refocus to a target hex. Deal 4 damage to all targets."
-            }
-        ],
-        "info": "Directional focus."
-    },
-    "Fatal Blow": {
-        "count": 2,
-        "type": "ACTION",
-        "range": "directional/accurate",
-        "effects": [
-            {
-                "type": "starting/empty/continue"
-            },
-            {
-                "type": "temporary/move/discard",
-                "text": "Deal 4 damage to a target //. It unfocuses."
-            }
-        ],
-        "info": "Directional focus."
-    },
-    "Grapple": {
-        "count": 2,
-        "type": "ACTION",
-        "range": "directional/inaccurate",
-        "effects": [
-            {
-                "type": "starting/instant/continue",
-                "text": "Mark a target //."
-            },
-            {
-                "type": "temporary/move/stay",
-                "text": "Discard the marked target's action."
-            },
-            {
-                "type": "regular/passive/long",
-                "text": "You and the marked target are slowed down and weakened by 1. It is locked on you."
-            }
-        ],
-        "info": "Directional focus."
-    },
-    "Light-Footed": {
-        "count": 2,
-        "type": "STANCE",
-        "effects": [
-            {
-                "type": "regular/move",
-                "text": "Refocus."
-            },
-            {
-                "type": "regular/passive/short",
-                "text": "You may increase your walk abilities by up to 2."
-            }
-        ]
-    },
-    "Lightning Reflexes": {
-        "count": 2,
-        "type": "STANCE",
-        "range": "untargeted/adjacent",
-        "effects": [
-            {
-                "type": "regular/move",
-                "text": "Refocus."
-            },
-            {
-                "type": "regular/passive/short",
-                "text": "When a character leaves a marked hex, you may deal 2 damage to it."
-            }
-        ]
-    },
-    "Quick Steps": {
-        "count": 2,
-        "type": "STANCE",
-        "effects": [
-            {
-                "type": "regular/move",
-                "text": "Refocus."
-            },
-            {
-                "type": "regular/swift",
-                "text": "Walk 1."
-            }
-        ]
-    },
-    "Tripping Strike": {
-        "count": 2,
-        "type": "ACTION",
-        "range": "directional/inaccurate",
-        "effects": [
-            {
-                "type": "starting/instant/continue",
-                "text": "Deal 1 damage to a target //. It unfocuses and becomes prone."
-            },
-            {
-                "type": "temporary/move/stay",
-                "text": "Deal 4 damage to a prone target."
-            },
-            {
-                "type": "regular/passive/short",
-                "text": "You may deal 2 damage to any target that stands up."
-            }
-        ],
-        "info": "Directional focus. Prone characters can spend a walk 1 to stop being prone."
+    "stances": {
+        "Deadly": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "Damage dealt by your directional focus cards is increased by 1."
+                }
+            ]
+        },
+        "Defense Position": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "Damage dealt to you is decreased by 1."
+                }
+            ]
+        },
+        "Light-Footed": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "You may increase your walk abilities by up to 2."
+                }
+            ]
+        },
+        "Lightning Reflexes": {
+            "count": 2,
+            "range": "untargeted/adjacent",
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "When a character leaves a marked hex, you may deal 2 damage to it."
+                }
+            ]
+        },
+        "Quick Steps": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/swift",
+                    "text": "Walk 1."
+                }
+            ]
+        }
     }
 }

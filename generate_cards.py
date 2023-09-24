@@ -26,12 +26,12 @@ def asset_path(base: str, path: str) -> str:
     return f'https://github.com/One-Nose/Myths/blob/main/{rel_path}?raw=true'
 
 
-def card_dict(name: str, card: CardJSON) -> dict[str, str]:
+def card_dict(name: str, card: CardJSON, card_type: str) -> dict[str, str]:
     """Gets the fields of a card."""
 
     fields = {
         'label': name,
-        'card_type': card['type'],
+        'card_type': card_type,
         'range': asset_path(
             'assets/hexes/range',
             card['range'] if 'range' in card else 'untargeted/none',
@@ -69,10 +69,12 @@ def get_cards() -> list[dict[str, str]]:
     """Gets the fields of the cards from cards.json."""
 
     cards = get_json()
-    return [card_dict(name, card) for name, card in cards.items()]
+    return [
+        card_dict(name, card, 'ACTION') for name, card in cards['actions'].items()
+    ] + [card_dict(name, card, 'STANCE') for name, card in cards['stances'].items()]
 
 
-def get_json() -> dict[str, CardJSON]:
+def get_json() -> dict[str, dict[str, CardJSON]]:
     """Gets the cards.json dictionary"""
 
     with open('cards.json', encoding='UTF-8') as file:
