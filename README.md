@@ -35,8 +35,8 @@ Each _player turn_, each _character_ that _player_ controls gets one _turn_. The
 
 Each _character_'s _turn_:
 
-1. The _character_ gets one _move_ and one _swift move_, which it may spend in any order.
-2. The _character_ _advances_ its _action mark_.
+1. The _character_ _advances_ its _action mark_.
+2. The _character_ gets one _move_ and one _swift move_, which it may spend in any order.
 3. The _character_ _draws_ _cards_ until it has 5 _cards_ in its _hand_.
 
 Each _character_ may _discard_ its _action_ or _stance_ at any time during the game.
@@ -49,7 +49,7 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Action:** A _card type_ that is either a _Stand card_ or placed over it, and may contain _temporary effects_. A _character_'s _action_ is its _Stand card_ if it is exposed or the _action_ that covers it.
 
-**Action mark:** A mark that belongs to a _character_ and can be placed next to a _temporary effect_ of its _action_, marking it as _active_. Is _advanced_ at the end of the _turn_.
+**Action mark:** A mark that belongs to a _character_ and can be placed next to a _temporary effect_ of its _action_, marking it as _active_. Is _advanced_ at the beginning of the _turn_.
 
 **Active:** An _effect_ that is treated as part of the game and is not ignored. An _effect_ is _active_ if it is present on a _character_'s _action_ or _stance_, and the condition of its _effect scope_ is met.
 
@@ -175,7 +175,7 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Temporary effect:** An _effect scope_ that is only present on _actions_ and is _active_ only while the _action mark_ is next to it. marked by a blue circle, or by a green circle if it is a _starting effect_. Has a _conclusion_.
 
-**Turn:** A period in which a certain _character_ performs up to one _move_ and up to one _swift move_, then _advances_ its _action mark_ and _draws_ until it has 5 _cards_ in its _hand_.
+**Turn:** A period in which a certain _character_ _advances_ its _action mark_, then performs up to one _move_ and up to one _swift move_, then _draws_ until it has 5 _cards_ in its _hand_.
 
 **Unfocus:** An _ability_ that causes a _character_ to move its _focus mark_ to outside the _board_.
 
