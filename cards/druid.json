@@ -9,7 +9,7 @@
                     "type": "starting/empty/continue"
                 },
                 {
-                    "type": "effect/temporary/passive/stay",
+                    "type": "temporary/passive/stay",
                     "text": "Characters in the marked hexes are slowed down by 1."
                 }
             ]
@@ -22,7 +22,7 @@
                     "type": "starting/empty/continue"
                 },
                 {
-                    "type": "effect/temporary/passive/stay",
+                    "type": "temporary/passive/stay",
                     "text": "Deal 2 damage to characters in marked hexes."
                 }
             ]
