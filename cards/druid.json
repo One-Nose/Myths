@@ -9,8 +9,21 @@
                     "type": "starting/empty/continue"
                 },
                 {
-                    "type": "temporary/passive/stay",
-                    "text": "Characters in the target or marked hexes are slowed down by 1."
+                    "type": "effect/temporary/passive/stay",
+                    "text": "Characters in the marked hexes are slowed down by 1."
+                }
+            ]
+        },
+        "Lightning Storm": {
+            "count": 2,
+            "range": "indirectional/area",
+            "effects": [
+                {
+                    "type": "starting/empty/continue"
+                },
+                {
+                    "type": "effect/temporary/passive/stay",
+                    "text": "Deal 2 damage to characters in marked hexes."
                 }
             ]
         }
