@@ -1,9 +1,19 @@
 {
     "$schema": "../cards.schema.json",
     "actions": {
-        
+        "Entanglement": {
+            "count": 2,
+            "range": "indirectional/area",
+            "effects": [
+                {
+                    "type": "starting/empty/continue"
+                }
+                {
+                    "type": "effect/temporary/passive/stay",
+                    "text": "Characters in the target or marked hexes are slowed down."
+                }
+            ]
+        }
     },
-    "stances": {
-
-    }
+    "stances": {}
 }
