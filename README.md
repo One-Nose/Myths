@@ -183,6 +183,8 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Unfocused:** A _state_ a _character_ is in if its _focus mark_ is outside the _board_.
 
+**Vulnerability:** A _state_ in which _damage dealt_ to the _character_ is increased by a certain number.
+
 **Walk:** An _ability_ that causes the _character_ to repeat a certain amount of times the process of moving its _pion_ to an adjacent _hex_, then if the _character_ is on the same _hex_ as its _focus mark_, move the _focus mark_ one step in the same direction.
 
 **Weakened:** A _state_ in which _damage dealt_ by the _character_ is reduced by a certain number.
