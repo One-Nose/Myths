@@ -23,7 +23,75 @@
                     "text": "Deal 2 damage to all characters in marked hexes."
                 }
             ]
+        },
+        "Slam": {
+            "count": 2,
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "starting/instant/discard",
+                    "text": "Deal 1 damage to a target."
+                }
+            ],
+            "info": "Directional focus"
+        },
+        "Bear's Embrace": {
+            "count": 2,
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "starting/instant/continue",
+                    "text": "Mark a target //."
+                },
+                {
+                    "type": "temporary/move/stay",
+                    "text": "Deal 0 damage to the marked target."
+                },
+                {
+                    "type": "regular/passive/long",
+                    "text": "You and the marked target are slowed down by 1. It is locked on you."
+                }
+            ],
+            "info": "Directional focus."
         }
     },
-    "stances": {}
+    "stances": {
+        "Bear Form": {
+            "count": 2,
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "Damage dealt by your directional focus cards is increased by 2."
+                },
+                {
+                    "type": "regular/passive/long",
+                    "text": "At the end of your turn, if you are locked on another character in range, deal 2 damage to it."
+                }
+            ],
+            "info": "Animal Form, Directional focus."
+        },
+        "Owl Form": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "You may increase your walk abilities by up to 2."
+                },
+                {
+                    "type": "regular/passive/long",
+                    "text": "Flying: you can move through character hexes as long as you finish your move action on an empty hex."
+                }
+            ],
+            "info": "Animal Form."
+        }
+    }
 }
