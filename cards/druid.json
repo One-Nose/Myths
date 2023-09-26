@@ -9,7 +9,7 @@
                     "type": "starting/empty/continue"
                 },
                 {
-                    "type": "effect/temporary/passive/stay",
+                    "type": "temporary/passive/stay",
                     "text": "Characters in the target or marked hexes are slowed down by 1."
                 }
             ]
