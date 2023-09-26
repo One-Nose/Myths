@@ -19,11 +19,8 @@
             "range": "indirectional/area",
             "effects": [
                 {
-                    "type": "starting/empty/continue"
-                },
-                {
-                    "type": "temporary/passive/stay",
-                    "text": "Deal 2 damage to characters in marked hexes."
+                    "type": "regular/move",
+                    "text": "Deal 2 damage to all characters in marked hexes."
                 }
             ]
         }
