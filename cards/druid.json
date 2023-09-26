@@ -53,6 +53,20 @@
                 }
             ],
             "info": "Directional focus."
+        },
+        "Heal": {
+            "count": 2,
+            "range": "directional/accurate",
+            "effects": [
+                {
+                    "type": "starting/empty/continue"
+                },
+                {
+                    "type": "temporary/move/discard",
+                    "text": "Heal 2 damage to target character."
+                }
+            ],
+            "info": "Directional focus."
         }
     },
     "stances": {
@@ -70,7 +84,7 @@
                 },
                 {
                     "type": "regular/passive/long",
-                    "text": "At the end of your turn, if you are locked on another character in range, deal 2 damage to it."
+                    "text": "At the end of your turn, if you are locked on another character in range, you may deal 2 damage to it."
                 }
             ],
             "info": "Animal Form, Directional focus."
@@ -84,7 +98,7 @@
                 },
                 {
                     "type": "regular/passive/short",
-                    "text": "You may increase your walk abilities by up to 2."
+                    "text": "You increase your walk abilities by up to 2."
                 },
                 {
                     "type": "regular/passive/long",
@@ -92,6 +106,37 @@
                 }
             ],
             "info": "Animal Form."
+        },
+        "Tiger Form": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "You increase your walk abilities by up to 1."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "Damage dealt by your directional focus cards is increased by 2."
+                }
+            ],
+            "info": "Animal Form."
+        },
+        "Meditation": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/swift",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "You cannot move. Vulnerability 1."
+                }
+            ]
         }
     }
 }
