@@ -3,8 +3,8 @@
 
 from csv import DictWriter
 from json import load
-from os import listdir
-from os.path import isfile
+from os import listdir, mkdir
+from os.path import isfile, exists
 from typing import Any, NotRequired, TypedDict
 
 
@@ -87,6 +87,9 @@ def get_json(source: str) -> dict[str, dict[str, CardJSON]]:
 
 def main() -> None:
     """Generates cards.csv from cards.json."""
+
+    if not exists('csv'):
+        mkdir('csv')
 
     for filename in listdir('cards'):
         cards = get_cards(f'cards/{filename}')
