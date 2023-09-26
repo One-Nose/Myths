@@ -107,6 +107,8 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **End of Library:** Double-faced and not considered a _card_. Every _library_ contains one. Whenever it becomes the top of the _library_, the _library_ needs to be _reshuffled_.
 
+**Flying:** A _character_ with the _flying_ ability can _walk_ through _character hexes_ as long as it finishes its _walk_ action on an _empty hex_.
+
 **Focus mark:** A unique piece that belongs to a _character_ and is placed either on a _hex_ or outside the _board_, in which case the _character_ is _unfocused_.
 
 **Hand:** Hidden _character cards_ that belong to a certain _character_ and can only be viewed and _played_ by the _player_ controlling it.
