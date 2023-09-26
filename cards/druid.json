@@ -88,7 +88,7 @@
                 },
                 {
                     "type": "regular/passive/long",
-                    "text": "Flying: you can move through character hexes as long as you finish your move action on an empty hex."
+                    "text": "Flying: you can walk through character hexes as long as you finish your walk action on an empty hex."
                 }
             ],
             "info": "Animal Form."
