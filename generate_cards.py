@@ -3,6 +3,7 @@
 
 from csv import DictWriter
 from json import load
+from os import listdir
 from os.path import isfile
 from typing import Any, NotRequired, TypedDict
 
@@ -65,19 +66,19 @@ def get_effects(effects: list[dict[str, str]]) -> dict[str, str]:
     return fields
 
 
-def get_cards() -> list[dict[str, str]]:
+def get_cards(source: str) -> list[dict[str, str]]:
     """Gets the fields of the cards from cards.json."""
 
-    cards = get_json()
+    cards = get_json(source)
     return [
         card_dict(name, card, 'ACTION') for name, card in cards['actions'].items()
     ] + [card_dict(name, card, 'STANCE') for name, card in cards['stances'].items()]
 
 
-def get_json() -> dict[str, dict[str, CardJSON]]:
+def get_json(source: str) -> dict[str, dict[str, CardJSON]]:
     """Gets the cards.json dictionary"""
 
-    with open('cards.json', encoding='UTF-8') as file:
+    with open(source, encoding='UTF-8') as file:
         cards: dict[str, Any] = load(file)
 
     del cards['$schema']
@@ -87,15 +88,16 @@ def get_json() -> dict[str, dict[str, CardJSON]]:
 def main() -> None:
     """Generates cards.csv from cards.json."""
 
-    cards = get_cards()
-    write_cards(cards)
+    for filename in listdir('cards'):
+        cards = get_cards(f'cards/{filename}')
+        write_cards(cards, f'csv/{filename}.csv')
 
 
-def write_cards(cards: list[dict[str, str]]) -> None:
+def write_cards(cards: list[dict[str, str]], destination: str) -> None:
     """Writes a list of card fields to cards.csv"""
 
     fieldnames = cards[0].keys()
-    with open('cards.csv', 'w', encoding='UTF-8', newline='') as file:
+    with open(destination, 'w', encoding='UTF-8', newline='') as file:
         writer = DictWriter(file, fieldnames=fieldnames)
 
         writer.writeheader()
