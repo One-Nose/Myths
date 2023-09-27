@@ -115,6 +115,8 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Hand:** Hidden _character cards_ that belong to a certain _character_ and can only be viewed and _played_ by the _player_ controlling it.
 
+**Heal:** An _ability_ that causes a _character_ to move a certain amount of top _cards_ from its _damage pile_ to the bottom of its _library_.
+
 **Hex:** A single hexagonical unit of area on the _board_. _Pions_ and _focus marks_ may be placed on it.
 
 **Hex type:** A type of _hex_ on a _range_ diagram that defines the conditions that must be met for that _hex_. Either an _empty hex_, a _character hex_ or a _target hex_.
