@@ -57,6 +57,8 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Alert card:** A _base card_ that is a _stance_. Contains only a _regular_ _move effect_ that says "_Refocus_."
 
+**Animal form:** A trait of _stances_. Any _character_ that has both a _spell_ and an _animal form_ immediately _discards_ its _spell_, even before its _effects_ becomes _active_.
+
 **Base card:** A _card_ that is placed next to a _library_ and belongs to its _character_, sometimes covered by a _character card_. Either a _Stand Card_ or an _Alert card_.
 
 **Board:** Where the game takes place, divided to _hexes_. _Pions_ and _focus marks_ may be placed on it.
@@ -152,6 +154,8 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 **Reshuffle:** Is performed whenever the top of a _library_ becomes the _End of Library_. The _End of Library_ is removed from the _library_, the _library_ is shuffled, then the _End of Library_ is returned to the bottom of the _library_.
 
 **Slowed down:** A _state_ in which a _character_'s _walk_ _abilities_ are decreased by a certain number.
+
+**Spell:** A trait of _actions_ that is _discarded_ immediately if its _character_ has an _animal form_, even before its _effects_ become _active_.
 
 **Spend:** A process in which a _character_ chooses to give up an _ability_ or decrease from its number to get another effect. A _character_ cannot spend a number that would decrease the _ability_'s number to lower than 0.
 
