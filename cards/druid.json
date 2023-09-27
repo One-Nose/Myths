@@ -57,6 +57,16 @@
             ],
             "info": "Directional focus."
         },
+        "Lightning Storm": {
+            "count": 2,
+            "range": "indirectional/single",
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Deal 4 damage to the target."
+                }
+            ]
+        },
         "Slam": {
             "count": 2,
             "range": "directional/inaccurate",
