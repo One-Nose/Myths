@@ -1,20 +1,7 @@
 {
     "$schema": "../cards.schema.json",
     "actions": {
-        "Entanglement": {
-            "count": 2,
-            "range": "indirectional/area",
-            "effects": [
-                {
-                    "type": "starting/empty/continue"
-                },
-                {
-                    "type": "temporary/passive/stay",
-                    "text": "Characters in the marked hexes are slowed down by 1."
-                }
-            ]
-        },
-        "Lightning Storm": {
+        "Acid Rain": {
             "count": 2,
             "range": "indirectional/area",
             "effects": [
@@ -23,17 +10,6 @@
                     "text": "Deal 2 damage to all characters in marked hexes."
                 }
             ]
-        },
-        "Slam": {
-            "count": 2,
-            "range": "directional/inaccurate",
-            "effects": [
-                {
-                    "type": "starting/instant/discard",
-                    "text": "Deal 1 damage to a target."
-                }
-            ],
-            "info": "Directional focus"
         },
         "Bear's Embrace": {
             "count": 2,
@@ -54,6 +30,19 @@
             ],
             "info": "Directional focus."
         },
+        "Entanglement": {
+            "count": 2,
+            "range": "indirectional/area",
+            "effects": [
+                {
+                    "type": "starting/empty/continue"
+                },
+                {
+                    "type": "temporary/passive/stay",
+                    "text": "Characters in the marked hexes are slowed down by 1."
+                }
+            ]
+        },
         "Heal": {
             "count": 2,
             "range": "directional/accurate",
@@ -67,6 +56,17 @@
                 }
             ],
             "info": "Directional focus."
+        },
+        "Slam": {
+            "count": 2,
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "starting/instant/discard",
+                    "text": "Deal 1 damage to a target."
+                }
+            ],
+            "info": "Directional focus"
         }
     },
     "stances": {
@@ -88,6 +88,19 @@
                 }
             ],
             "info": "Animal Form, Directional focus."
+        },
+        "Meditation": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/swift",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "You cannot move. Vulnerability 1."
+                }
+            ]
         },
         "Owl Form": {
             "count": 2,
@@ -124,19 +137,6 @@
                 }
             ],
             "info": "Animal Form."
-        },
-        "Meditation": {
-            "count": 2,
-            "effects": [
-                {
-                    "type": "regular/swift",
-                    "text": "Refocus."
-                },
-                {
-                    "type": "regular/passive/short",
-                    "text": "You cannot move. Vulnerability 1."
-                }
-            ]
         }
     }
 }
