@@ -85,7 +85,7 @@
     "stances": {
         "Bear Form": {
             "count": 2,
-            "range": "directional/inaccurate",
+            "range": "directional/accurate",
             "effects": [
                 {
                     "type": "regular/move",
@@ -100,7 +100,7 @@
                     "text": "At the end of your turn, if you are locked on another character in range, you may deal 2 damage to it."
                 }
             ],
-            "info": "Animal Form, Directional focus."
+            "info": "Animal Form"
         },
         "Meditation": {
             "count": 2,
