@@ -9,7 +9,8 @@
                     "type": "regular/move",
                     "text": "Deal 2 damage to all characters in marked hexes."
                 }
-            ]
+            ],
+            "info": "Spell."
         },
         "Bear's Embrace": {
             "count": 2,
@@ -41,7 +42,8 @@
                     "type": "temporary/passive/stay",
                     "text": "Characters in the marked hexes are slowed down by 1."
                 }
-            ]
+            ],
+            "info": "Spell."
         },
         "Heal": {
             "count": 2,
@@ -55,7 +57,7 @@
                     "text": "Heal 2 damage to target character."
                 }
             ],
-            "info": "Directional focus."
+            "info": "Spell, Directional focus."
         },
         "Lightning Storm": {
             "count": 2,
@@ -65,7 +67,8 @@
                     "type": "regular/move",
                     "text": "Deal 4 damage to the target."
                 }
-            ]
+            ],
+            "info": "Spell."
         },
         "Slam": {
             "count": 2,
