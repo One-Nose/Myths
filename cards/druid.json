@@ -65,7 +65,7 @@
             "effects": [
                 {
                     "type": "regular/move",
-                    "text": "Deal 4 damage to the target."
+                    "text": "Deal 3 damage to the target."
                 }
             ],
             "info": "Spell."
@@ -111,7 +111,7 @@
                 },
                 {
                     "type": "regular/passive/short",
-                    "text": "You cannot move. Vulnerability 1."
+                    "text": "You cannot move. Vulnerability 2."
                 }
             ]
         },
