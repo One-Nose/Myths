@@ -98,7 +98,7 @@
         },
         "Bear Form": {
             "count": 2,
-            "range": "directional/accurate",
+            "range": "untargeted/directional",
             "effects": [
                 {
                     "type": "regular/move",
@@ -110,7 +110,7 @@
                 },
                 {
                     "type": "regular/passive/long",
-                    "text": "At the end of your turn, if you are locked on another character in range, you may deal 2 damage to it."
+                    "text": "At the end of your turn, you may deal 2 damage to a character in a marked hex you are locked on."
                 }
             ],
             "info": "Animal Form"
