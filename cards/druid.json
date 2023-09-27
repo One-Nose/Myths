@@ -83,6 +83,19 @@
         }
     },
     "stances": {
+        "Agressive Mind": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "Damage dealt by your spells is increased by 1."
+                }
+            ]
+        },
         "Bear Form": {
             "count": 2,
             "range": "directional/accurate",
