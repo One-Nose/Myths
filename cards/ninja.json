@@ -2,7 +2,6 @@
     "$schema": "../cards.schema.json",
     "actions": {
         "Feint": {
-            "count": 2,
             "range": "untargeted/adjacent",
             "effects": [
                 {
@@ -13,7 +12,6 @@
             "info": "Hidden."
         },
         "Shuriken Throw": {
-            "count": 2,
             "range": "indirectional/far",
             "effects": [
                 {
@@ -27,7 +25,6 @@
             ]
         },
         "Sneak Attack": {
-            "count": 2,
             "range": "directional/accurate",
             "effects": [
                 {
@@ -38,7 +35,6 @@
             "info": "Directional focus."
         },
         "Sudden Dash": {
-            "count": 2,
             "effects": [
                 {
                     "type": "starting/instant/discard",
@@ -50,7 +46,6 @@
     },
     "stances": {
         "Precise": {
-            "count": 2,
             "effects": [
                 {
                     "type": "regular/passive/short",
@@ -59,7 +54,6 @@
             ]
         },
         "Light-Footed": {
-            "count": 2,
             "effects": [
                 {
                     "type": "regular/move",
@@ -72,7 +66,6 @@
             ]
         },
         "Quick Tricks": {
-            "count": 2,
             "effects": [
                 {
                     "type": "regular/swift",
@@ -81,7 +74,6 @@
             ]
         },
         "Versatile Focus": {
-            "count": 2,
             "effects": [
                 {
                     "type": "regular/swift",

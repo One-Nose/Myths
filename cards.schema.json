@@ -34,8 +34,7 @@
                     "count": {
                         "type": "integer",
                         "description": "The amount of copies of the card in the library.",
-                        "minimum": 0,
-                        "default": 2
+                        "minimum": 0
                     },
                     "range": {
                         "$ref": "#/$defs/path",
@@ -71,7 +70,6 @@
                 },
                 "additionalProperties": false,
                 "required": [
-                    "count",
                     "effects"
                 ]
             }

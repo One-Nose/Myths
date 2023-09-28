@@ -2,7 +2,6 @@
     "$schema": "../cards.schema.json",
     "actions": {
         "Charge!": {
-            "count": 2,
             "range": "directional/inaccurate",
             "effects": [
                 {
@@ -17,7 +16,6 @@
             "info": "Directional focus."
         },
         "Displacement": {
-            "count": 2,
             "range": "directional/displacement",
             "effects": [
                 {
@@ -36,7 +34,6 @@
             "info": "Directional focus."
         },
         "Double Swing": {
-            "count": 2,
             "range": "directional/inaccurate",
             "effects": [
                 {
@@ -51,7 +48,6 @@
             "info": "Directional focus."
         },
         "Fatal Blow": {
-            "count": 2,
             "range": "directional/accurate",
             "effects": [
                 {
@@ -65,7 +61,6 @@
             "info": "Directional focus."
         },
         "Grapple": {
-            "count": 2,
             "range": "directional/inaccurate",
             "effects": [
                 {
@@ -84,7 +79,6 @@
             "info": "Directional focus."
         },
         "Tripping Strike": {
-            "count": 2,
             "range": "directional/inaccurate",
             "effects": [
                 {
@@ -105,7 +99,6 @@
     },
     "stances": {
         "Deadly": {
-            "count": 2,
             "effects": [
                 {
                     "type": "regular/move",
@@ -118,7 +111,6 @@
             ]
         },
         "Defense Position": {
-            "count": 2,
             "effects": [
                 {
                     "type": "regular/move",
@@ -131,7 +123,6 @@
             ]
         },
         "Light-Footed": {
-            "count": 2,
             "effects": [
                 {
                     "type": "regular/move",
@@ -144,7 +135,6 @@
             ]
         },
         "Lightning Reflexes": {
-            "count": 2,
             "range": "untargeted/adjacent",
             "effects": [
                 {
@@ -158,7 +148,6 @@
             ]
         },
         "Quick Steps": {
-            "count": 2,
             "effects": [
                 {
                     "type": "regular/move",

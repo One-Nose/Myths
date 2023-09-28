@@ -44,7 +44,7 @@ def card_dict(name: str, card: CardJSON, card_type: str) -> dict[str, str]:
     fields.update(
         {
             'info': ' - ' + card['info'] if 'info' in card else '',
-            'item-count': str(card['count']),
+            'item-count': str(card['count']) if 'count' in card else '2',
         }
     )
 
