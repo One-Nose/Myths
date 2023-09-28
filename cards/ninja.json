@@ -1,0 +1,26 @@
+{
+    "$schema": "../cards.schema.json",
+    "actions": {
+        "Feint": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "starting/instant/discard",
+                    "text": "Walk 2."
+                }
+            ],
+            "info": "Hidden."
+        }
+    },
+    "stances": {
+        "Quick Tricks": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/swift",
+                    "text": "Flip a hidden action."
+                }
+            ]
+        }
+    }
+}

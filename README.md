@@ -121,6 +121,8 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Hex type:** A type of _hex_ on a _range_ diagram that defines the conditions that must be met for that _hex_. Either an _empty hex_, a _character hex_ or a _target hex_.
 
+**Hidden:** A trait of _actions_ that allows the _player_ to _play_ them face down. While face down, a _hidden_ _action_ can be flipped by spending a _move_.
+
 **Instant effect:** An _effect type_ that's performed immediately the moment it becomes _active_, marked by an empty circle.
 
 **Library:** A stack of _character cards_ that belong to the same _character_ and an _End of Library_ placed face down next to the _player_ controlling that _character_.
