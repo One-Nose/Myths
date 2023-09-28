@@ -1,6 +1,5 @@
 {
     "$id": "cards.schema.json",
-
     "type": "object",
     "description": "A list of cards, sorted by card type.",
     "properties": {
@@ -14,9 +13,12 @@
             "$ref": "#/$defs/cards"
         }
     },
-    "required": ["$schema", "actions", "stances"],
+    "required": [
+        "$schema",
+        "actions",
+        "stances"
+    ],
     "additionalProperties": false,
-
     "$defs": {
         "path": {
             "type": "string",
@@ -57,7 +59,9 @@
                                 }
                             },
                             "additionalProperties": false,
-                            "required": ["type"]
+                            "required": [
+                                "type"
+                            ]
                         }
                     },
                     "info": {
@@ -66,7 +70,10 @@
                     }
                 },
                 "additionalProperties": false,
-                "required": ["count", "effects"]
+                "required": [
+                    "count",
+                    "effects"
+                ]
             }
         }
     }
