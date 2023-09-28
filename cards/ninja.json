@@ -10,6 +10,17 @@
                 }
             ],
             "info": "Hidden."
+        },
+        "Sneak Attack": {
+            "count": 2,
+            "range": "directional/accurate",
+            "effects": [
+                {
+                    "type": "starting/instant/discard",
+                    "text": "Deal 2 damage to the target. If it's surprised, increase that damage by 2."
+                }
+            ],
+            "info": "Directional focus."
         }
     },
     "stances": {
