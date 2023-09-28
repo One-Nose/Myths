@@ -3,10 +3,11 @@
     "actions": {
         "Feint": {
             "count": 2,
+            "range": "untargeted/adjacent",
             "effects": [
                 {
                     "type": "starting/instant/discard",
-                    "text": "Walk 2."
+                    "text": "Move all focus marks on your hex to a marked hex."
                 }
             ],
             "info": "Hidden."
@@ -21,6 +22,16 @@
                 }
             ],
             "info": "Directional focus."
+        },
+        "Sudden Dash": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "starting/instant/discard",
+                    "text": "Walk 2."
+                }
+            ],
+            "info": "Hidden."
         }
     },
     "stances": {
