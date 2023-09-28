@@ -113,6 +113,8 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Focus mark:** A unique piece that belongs to a _character_ and is placed either on a _hex_ or outside the _board_, in which case the _character_ is _unfocused_.
 
+**Focused:** A _character_ is _focused_ by another _character_ if the former is at the same _hex_ as the latter's _focus mark_.
+
 **Hand:** Hidden _character cards_ that belong to a certain _character_ and can only be viewed and _played_ by the _player_ controlling it.
 
 **Heal:** An _ability_ that causes a _character_ to move a certain amount of top _cards_ from its _damage pile_ to the bottom of its _library_.

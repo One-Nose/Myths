@@ -12,6 +12,20 @@
             ],
             "info": "Hidden."
         },
+        "Shuriken Throw": {
+            "count": 2,
+            "range": "indirectional/far",
+            "effects": [
+                {
+                    "type": "starting/instant/continue",
+                    "text": "Deal 2 damage to the focused target."
+                },
+                {
+                    "type": "temporary/move/discard",
+                    "text": "Deal 2 damage to the focused target."
+                }
+            ]
+        },
         "Sneak Attack": {
             "count": 2,
             "range": "directional/accurate",
