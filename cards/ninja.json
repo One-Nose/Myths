@@ -18,7 +18,7 @@
             "effects": [
                 {
                     "type": "starting/instant/discard",
-                    "text": "Deal 2 damage to the target. If it's surprised, increase that damage by 2."
+                    "text": "Deal 2 damage to the target. If it's surprised, increase it by 2."
                 }
             ],
             "info": "Directional focus."
