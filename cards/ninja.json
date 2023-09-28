@@ -13,6 +13,19 @@
         }
     },
     "stances": {
+        "Light-Footed": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/move",
+                    "text": "Refocus."
+                },
+                {
+                    "type": "regular/passive/short",
+                    "text": "You increase your walk abilities by up to 2."
+                }
+            ]
+        },
         "Quick Tricks": {
             "count": 2,
             "effects": [
