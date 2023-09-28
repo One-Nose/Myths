@@ -24,6 +24,15 @@
         }
     },
     "stances": {
+        "Precise": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/passive/short",
+                    "text": "Damage you deal to surprised characters is increased by 2."
+                }
+            ]
+        },
         "Light-Footed": {
             "count": 2,
             "effects": [
@@ -43,6 +52,15 @@
                 {
                     "type": "regular/swift",
                     "text": "Flip a hidden action."
+                }
+            ]
+        },
+        "Versatile Focus": {
+            "count": 2,
+            "effects": [
+                {
+                    "type": "regular/swift",
+                    "text": "Refocus to a hex adjacent to your focus mark."
                 }
             ]
         }
