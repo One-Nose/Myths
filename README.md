@@ -177,7 +177,7 @@ Each _character_ may _discard_ its _action_ or _stance_ at any time during the g
 
 **Stay conclusion:** A _conclusion_ that does nothing when the _action mark_ is _advanced_, marked by nothing below the circle.
 
-**Surprised:** A _character_ is _surprised_ by an _effect_ if the distance between the _character_'s _direction_ and its _direction_ towards the _effect_ is two or more.
+**Surprised:** A _character_ is _surprised_ by an _effect_ if the distance between the _character_'s _direction_ and its _direction_ towards the _effect_ is two or more, or if it is _unfocused_.
 
 **Swift effect:** An _effect type_ that can be performed by spending a _swift move_, marked by a circle with a blue lightning symbol.
 
