@@ -24,7 +24,7 @@ To pass the _turn_, press the **End Turn** button. To move the game pieces, drag
 
 1. In a six _players_ game, each _player_ chooses a _character_. In a two _players_ game, each _player_ chooses a color and controls all _characters_ of that color.
 2. Place the blue _pions_ on the starting _hexes_ on one side of the _board_ and the red ones on the other side, in any order.
-3. Shuffle each _deck_, put an _End of Library_ at the bottom of each and turn each to it's _character_'s _library_.
+3. Shuffle each _deck_, put an _End of Library_ at the bottom of each and turn each to its _character_'s _library_.
 4. Give each _character_ its _focus mark_, a _Stand card_, an _Alert card_ and an _action mark_.
 5. Each _character_ _draws_ 5 _cards_.
 6. The first _player_ begins their _player turn_.
