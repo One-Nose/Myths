@@ -1,6 +1,26 @@
 {
     "$schema": "../cards.schema.json",
     "actions": {
+        "Dizzying Strike": {
+            "range": "directional/accurate",
+            "effects": [
+                {
+                    "type": "starting/instant/discard",
+                    "text": "Deal 1 damage to the target. If it's surprised, Unfocus it."
+                }
+            ],
+            "info": "Directional focus."
+        },
+        "Intoxicating Gas": {
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "starting/instant/discard",
+                    "text": "Target throws 3 cards of its hand."
+                }
+            ],
+            "info": "Directional focus, Hidden."
+        },
         "Feint": {
             "range": "untargeted/adjacent",
             "effects": [
@@ -29,10 +49,20 @@
             "effects": [
                 {
                     "type": "starting/instant/discard",
-                    "text": "Deal 2 damage to the target. If it's surprised, increase it by 2."
+                    "text": "Deal 1 damage to the target. If it's surprised, increase it by 2."
                 }
             ],
             "info": "Directional focus."
+        },
+        "Sand Goggles": {
+            "range": "directional/inaccurate",
+            "effects": [
+                {
+                    "type": "starting/instant/discard",
+                    "text": "Unfocus the target."
+                }
+            ],
+            "info": "Directional focus, Hidden."
         },
         "Sudden Dash": {
             "effects": [
